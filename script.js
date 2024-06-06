@@ -5,9 +5,9 @@ const questions = [
         correct: "Arquivo malicioso que altera a forma como um computador funciona"
     },
     {
-        question: "Qual é o maior planeta do Sistema Solar?",
-        answers: ["Terra", "Marte", "Júpiter", "Saturno"],
-        correct: "Júpiter"
+        question: "Como criar uma senha forte para proteger sua conta?",
+        answers: ["Colocar ela em um papel e deixar visível a todos", "Incluir seu nome ou nome de alguem próximo", "Colocar letras maiúsculas, minúsculas, numeros e caracteres especiais", "Colocar só letras e numeros"],
+        correct: "Colocar letras maiúsculas, minúsculas, numeros e caracteres especiais"
     },
     {
         question: "O que se deve fazer ao receber a notificação de que há um arquivo malicioso em seu computador?",
