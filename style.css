@@ -1,0 +1,124 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nova fonte */
+    background-color: #f4f4f4;  /* Fundo preto */
+    color: #ffffff;  /* Texto branco */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    background: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    font-size: 2em;
+    color: #36639e ;  /* Cor Título */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Nova fonte */
+}
+
+#quiz-container {
+    background: #2b2b2b;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question h3 {
+    margin-bottom: 10px;
+    color: #ffff00;  /* Cor das perguntas */
+}
+
+.answers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.answer {
+    flex: 1 1 calc(50% - 10px); /* Dois quadrados por linha */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #3a3a3a;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transição para a transformação e sombra */
+}
+
+.answer input {
+    display: none;
+}
+
+.answer label {
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+    text-align: center;
+}
+
+.answer:hover {
+    background: #505050;
+    transform: scale(1.05); /* Aumenta um pouco o tamanho ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil */
+}
+
+.answer.selected {
+    background: #2f548d; /* Azul quando selecionado */
+    transform: scale(1.05); /* Aumenta um pouco o tamanho ao ser selecionado */
+}
+
+.answer.correct {
+    background: #28a745; /* Verde quando correto */
+}
+
+.answer.incorrect {
+    background: #dc3545; /* Vermelho quando incorreto */
+}
+
+.feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#submit-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #ff6f61;  /* Botão laranja */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+
+#submit-btn:hover {
+    background: #e65c54;
+}
+
+#result-container {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #4caf50;  /* Cor do resultado */
+}
